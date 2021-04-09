@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="grid">
+        <header>Kasdep game</header>
+        <div class="info">
+            <i (click)="openInfoDialog()" class="fas fa-question-circle"></i>
+        </div>
+        <div class="dice">
+            <button (click)="throwADice()" class="dice-btn" [class.disabledBtn]="isDisabled" [disabled]="isDisabled">
+                Rzuć kostką
+            </button>
+            <i [ngClass]="[diceDotsClass, shake]" *ngIf="diceResult !== 0" class="dice-result"></i>
+        </div>
+        <i [ngClass]="[fishPosition]" class="fas fa-fish"></i>
+        <div *ngFor="let field of fields; index as i" [ngClass]="[field]" class="board-game-field">{{ i === 0 ? 'START' : i }}</div>
+    </div>
+</div>

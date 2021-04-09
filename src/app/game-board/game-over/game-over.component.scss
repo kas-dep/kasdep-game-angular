@@ -1,0 +1,40 @@
+@import "../../../assets/style/variables.scss";
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dark-violet;
+}
+
+p {
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 250px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: $dark-violet;
+  color: $light-pink;
+  margin: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.fa-chevron-right {
+  color: $dark-violet;
+  font-size: 17px;
+  margin-right: 10px;
+}

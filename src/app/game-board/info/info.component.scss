@@ -1,0 +1,39 @@
+@import "../../../assets/style/variables.scss";
+
+ul {
+  list-style: none;
+}
+.container {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-template-rows: 20% 80%;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $dark-violet;
+}
+.close-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: $red;
+}
+.close-btn:focus {
+  outline: none;
+}
+
+.fa-chevron-right {
+  color: $dark-violet;
+  font-size: 17px;
+  margin-right: 10px;
+}
+li {
+  font-size: 17px;
+  padding: 10px;
+}
